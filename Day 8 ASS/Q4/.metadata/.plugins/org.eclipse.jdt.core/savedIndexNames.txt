@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\Coding\Day 8 ASS\Q4\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1101075239.index
+137624701.index

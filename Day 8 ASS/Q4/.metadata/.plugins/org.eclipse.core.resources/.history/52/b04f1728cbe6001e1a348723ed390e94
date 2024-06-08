@@ -1,0 +1,8 @@
+
+public class InvalidLengthException extends Exception {
+	InvalidLengthException (String msg)
+	{
+		super(msg);
+	}
+	
+}
