@@ -1,0 +1,26 @@
+//6) create a class "MyClass".//
+//create 5 different objects of it.
+//add them in a ArrayList.
+//store ArrayList in file.
+//Now open a file, read ArrayList and display all objects
+
+
+public class Myclass
+{
+	private int num;
+
+	public Myclass(int num) {
+		super();
+		this.num = num;
+	}
+	
+}
+public class Q6 {
+
+	public static void main(String[] args) {
+		Myclass m=new Myclass();
+		
+
+	}
+
+}

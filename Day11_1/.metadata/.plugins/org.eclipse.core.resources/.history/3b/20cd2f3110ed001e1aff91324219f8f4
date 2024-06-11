@@ -1,0 +1,16 @@
+//9) maintain ICC ranking of at least 5 batsmen in the "HashMap".
+//list should be maintain as "rank" "name"
+//e.g. "1" "Rohit Sharma".
+//Now ask any rank bet'n 1 to 5 from user. ( user input).
+//if user asks for a particular rank , retrieve batsman name for that rank from the HashMap.
+
+
+
+public class Q9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

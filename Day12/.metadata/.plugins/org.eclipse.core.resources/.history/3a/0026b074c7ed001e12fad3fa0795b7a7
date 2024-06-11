@@ -1,0 +1,17 @@
+package pack;
+
+
+
+interface sport
+{
+	String Sport(String name);
+	default void disp()
+	{
+		System.out.println(in disp);
+	}
+}
+
+
+
+
+

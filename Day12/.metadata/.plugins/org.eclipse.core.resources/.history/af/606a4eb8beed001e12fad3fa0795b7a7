@@ -1,0 +1,50 @@
+package pack;
+
+
+interface emp
+{
+	//String disp1();
+	default String disp2()
+	{
+		return "in disp2";
+	}
+}
+interface emp1
+{
+default String disp5(){
+	return "in disp2 of emp1";
+}
+}
+
+interface emp2
+{
+	String disp2();
+	default String disp6()
+	{
+		return "in disp6";
+	}
+}
+
+class MyClass implements emp,emp1,emp2
+{
+	public String disp2()
+	{
+		System.out.println("In Overriden");
+	}
+	public String disp1()
+	{
+		return "in disp1";
+	}
+	
+}
+public class Demo
+{
+	public static void main(String args[])
+	{
+		MyClass m=new MyClass();
+		System.out.println(m.disp2());
+		System.out.println(m.disp5());
+		System.out.println(m.disp6());
+	}
+}
+		

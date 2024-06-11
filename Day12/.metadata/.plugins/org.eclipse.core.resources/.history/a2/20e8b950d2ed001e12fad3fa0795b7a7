@@ -1,0 +1,13 @@
+//2) define a functional interface "Second" with an abstract method "void disp4()".
+
+
+package pack;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

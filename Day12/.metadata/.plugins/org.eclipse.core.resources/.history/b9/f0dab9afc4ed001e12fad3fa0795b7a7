@@ -1,0 +1,38 @@
+package pack;
+
+
+interface emp
+{
+	String disp();
+	default String disp1()
+	{
+		return "In disp1";
+		
+	}
+	
+	interface emp1
+	{
+		default String disp2()
+		{
+			
+			return "In disp2";
+		}
+		class abc
+		{
+			default String disp2()
+			{
+				
+				return "In abc;
+			}
+		}
+	class abc implements emp,emp1
+	{
+		Public String disp1() {
+			return "In abc";
+			
+		}
+		
+	}
+	}
+}
+

@@ -1,0 +1,10 @@
+package pack;
+
+public class NumberNotDivisibleBySevenException extends Exception 
+{
+	NumberNotDivisibleBySevenException(String name)
+	{
+		super (name);
+	}
+	
+}

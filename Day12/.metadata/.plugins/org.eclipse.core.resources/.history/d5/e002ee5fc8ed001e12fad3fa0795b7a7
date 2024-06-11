@@ -1,0 +1,31 @@
+package pack;
+
+
+
+interface sport
+{
+	String wish(String name);
+	default void disp()
+	{
+		System.out.println("in disp");
+	}
+	
+	static void disp1()
+	{
+		System.out.println("In static disp1");
+	}
+}
+
+public class Demo
+{
+	public static void main(String[] args) {
+		sport ref=(String name) -> {return "Name:"+name;};
+		ref.wish("Sohan");
+		System.out.println(ref.getclass().getName());
+		ref.disp();		
+		}
+}
+
+
+
+

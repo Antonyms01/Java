@@ -1,0 +1,37 @@
+//5) create a class MyNum with//
+//		private int num;
+//		parameterized constructor
+//
+//	
+//Demo class with main
+//	create 4 objects of MyNum by passing different integers.
+//	store these 4 objects inside "ArrayList"
+//	and now store that ArrayList inside file system.
+//	
+//	read ArrayList from file and traverse it using Iterator.
+
+import java.util.ArrayList;
+
+class Mynum{
+	private int num;
+	Mynum(int num)
+	{
+		this.num=num;
+	}
+}
+public class Q5 {
+
+	public static void main(String[] args) {
+		ArrayList <Integer>arr=new ArrayList();
+		Mynum m=new Mynum(10);
+		Mynum m1=new Mynum(10);
+		Mynum m2=new Mynum(10);
+		Mynum m3=new Mynum(10);
+		
+		arr.add(m);
+		arr.add(m1);
+		arr.add(m2);
+		arr.add(m3);
+	}
+
+}

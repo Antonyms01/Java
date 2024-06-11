@@ -1,0 +1,16 @@
+//
+//4) add 5 numbers inside CopyOnWriteArrayList and show how can you add one more number at the same 
+//time of traversal through its iterator.
+
+import java.util.List;
+import java.util.concurrent.CopyWriteArrayList;
+
+public class Q4 {
+
+	public static void main(String[] args) {
+		CopyWriteArrayList<Integer>list=new CopyWriteArrayList();
+		
+
+	}
+
+}

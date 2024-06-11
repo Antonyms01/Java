@@ -1,0 +1,101 @@
+
+//6) create a class "MyClass".//
+
+//create 5 different objects of it.
+//add them in a ArrayList.
+//store ArrayList in file.
+//Now open a file, read ArrayList and display all objects
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+class Myclass implements Serializable
+{
+	private int num;
+
+	Myclass(int num)
+	{
+		this.num=num;
+	}
+
+
+	@Override
+	public String toString() {
+		return "MyClass [num=" + num + "]";
+	}
+	
+	
+	public class Q6
+	{
+		public static void main(String[] args) {
+			Myclass m1=new Myclass(10);
+			Myclass m2=new Myclass(20);
+			Myclass m3=new Myclass(30);
+			Myclass m4=new Myclass(40);
+			Myclass m5=new Myclass(50);
+			
+			
+			List <Myclass>list=new ArrayList<Myclass>();
+			list.add(m1);
+			list.add(m2);
+			list.add(m3);
+			list.add(m4);
+			list.add(m5);
+			
+			try(FileOutputStream fos=new FileOutputStream ("xyz.txt"))
+					{
+						try(ObjectOutputStream oos=new ObjectOutputStream(fos))
+								{
+									oos.writeObject(list);
+								}
+						catch(Exception e)
+						{
+							System.out.println(e);
+						}
+					}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+			
+			
+			
+			List<Myclass>list1=null;
+			
+			try(FileInputStream fis=new FileInputStream ("xyz.txt"))
+			{
+				try(ObjectInputStream ois=new ObjectInputStream(fis))
+				{
+					list1=(ArrayList<Myclass>)ois.readObject();
+				}
+				catch(Exception e)
+				{
+					System.out.println(e);
+				}
+				
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+			
+			ListIterator<Myclass> ltr = list1.listIterator();
+			while(ltr.hasNext())
+			{
+				System.out.println(ltr.next());
+			}
+			
+			
+			
+		}
+	}
+}

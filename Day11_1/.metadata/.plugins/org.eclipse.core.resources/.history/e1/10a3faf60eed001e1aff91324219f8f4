@@ -1,0 +1,27 @@
+//8) create a hierarchy as follows
+//	interface Game- play() method
+//	Derive at least 3 classes from it. ( Cricket, Chess and Football )
+//Now Create generic class which can take Game type (i.e. any sub type of Game) as parameter.
+//In this class try to call the play() method of the class which is passed to it.
+
+
+interface Game
+{
+	void play();
+}
+
+class football implements Game
+{
+	void play()
+	{
+		System.out.println("Football");
+	}
+}
+public class Q8 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

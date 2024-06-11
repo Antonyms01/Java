@@ -1,0 +1,13 @@
+//7) create a HashMap.
+//store  prn no. and students name of 10 students inside the HashMap.
+//display it using iterator.
+
+
+public class Q7 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

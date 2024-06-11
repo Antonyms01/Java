@@ -1,0 +1,13 @@
+package pack;
+
+
+interface emp
+{
+	String disp();
+	default String disp1()
+	{
+		return "In disp1";
+		
+	}
+}
+

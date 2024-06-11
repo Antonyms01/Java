@@ -1,0 +1,116 @@
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.ListIterator;
+//import java.util.Iterator;
+//
+//
+//
+//public class Demo {
+//
+//	public static void main(String[] args) {
+//		List <Integer> l=new ArrayList<Integer>();
+//		l.add(10);
+//		l.add(20);
+//		l.add(30);
+//		l.add(40);
+//		System.out.println(l);
+//		
+//		ListIterator <Integer>ltr=l.listIterator();
+//		//ListIterator ltr1=l.listIterator();
+//		ltr.add(12);
+//		
+//	while(ltr.hasNext())
+//	{
+//		int i = ltr.next();
+//		if(i==30)
+//		{
+//			ltr.remove();
+//		}
+//		System.out.println(l);
+//	}
+//	ltr.set(90);
+//	
+//	ListIterator <Integer> ltr1=l.listIterator();
+//
+//	while(ltr1.hasNext())
+//	{
+//		int k=ltr1.next();
+//		if(k==20)
+//
+//		{
+//			ltr1.remove();
+//		}
+//		System.out.println(l);
+//	}
+//	}
+//
+//	
+//}
+
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.concurrent.CopyOnWriteArrayList;
+//import java.util.Iterator;
+//
+//
+//public class Demo
+//{
+//	public static void main(String[] args) {
+//		//List l=new ArrayList();
+//		CopyOnWriteArrayList list=new CopyOnWriteArrayList();
+//		list.add("Sohan");
+//		list.add("Sarode");
+//		Iterator i=list.iterator();
+//		int j=0;
+//		while(i.hasNext())
+//		{
+//			System.out.println(i.next());
+//			list.add("ME");
+//			//list.set("Meee");
+//			i.remove();
+//		}
+//		
+		
+//		Iterator i1=list.iterator();
+//		while(i1.hasNext())
+//		{
+//			System.out.println(i1.next());
+//		}
+//}
+//}
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Demo
+{
+	public static void main(String[] args) {
+		Map<Integer,String>m=new HashMap<>();
+		m.put(1, "Sohan");
+		m.put(2, "Mrunal");
+		m.put(3, "Mehul");
+		System.out.println(m);
+		String no=m.get(1);
+		System.out.println(no);
+		m.put(1, "Me");
+		System.out.println(m);
+		Set<Entry<Integer,String>>s=m.entrySet();
+		Iterator<Entry<Integer,String>>i=s.iterator();
+		while(i.hasNext())
+		{
+			Map.Entry<Integer, String>me=(Entry<Integer,String>)i.next();
+			System.out.println(me.getValue());
+			System.out.println(me.getKey());
+		}
+	
+		
+		int balance=m.get("Mrunal");
+		m.put("john",balance+1000);
+		System.out.println("john's new balance  "+m.get("Mrunal"));
+		 
+		
+	}
+}

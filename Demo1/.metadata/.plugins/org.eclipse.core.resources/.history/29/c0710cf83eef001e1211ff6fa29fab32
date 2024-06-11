@@ -1,0 +1,77 @@
+//package pack;
+//
+//
+//import java.io.IOException;
+//
+//public class Demo
+//{
+//	void disp3()throws IOException
+//	{
+//		int num=20;
+//		if(num>10)
+//		{
+//			throw new IOException();
+//		}
+//	}
+//	void disp2()throws IOException
+//	{
+//		disp3();
+//	}
+//	void disp1()throws IOException
+//	{
+//		disp2();
+//	}
+//	public static void main(String args[]) throws IOException
+//	{
+//		Demo j=new Demo();
+//		j.disp1(); // compilation error : add throws or try_catch
+//	}
+//}
+
+
+
+
+interface Animal
+{
+	public void makesound();
+}
+
+
+class Tiger implements Animal
+{
+	public void makesound()
+	{
+		System.out.println("Roar");
+	}
+}
+
+class Elephant implements Animal
+{
+	public void makesound()
+	{
+		System.out.println("Don't know");
+	}
+	
+	public void innocent()
+	{
+		System.out.println("Elephant is Innocent");
+	}
+}
+ class Demo
+ 
+ {
+	 
+	 static void fun(Animal ref)
+	 {
+		 ref.makesound();
+	 }
+	 public static void main(String[] args) {
+		Demo d=new Demo();
+		
+		
+		fun(new Tiger());
+		fun(new Elephant());
+	}
+ }
+
+

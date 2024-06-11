@@ -1,0 +1,63 @@
+package pack;
+
+
+
+//8) create a hierarchy as follows
+//interface Game- play() method
+//Derive at least 3 classes from it. ( Cricket, Chess and Football )
+//Now Create generic class which can take Game type (i.e. any sub type of Game) as parameter.
+//In this class try to call the play() method of the class which is passed to it.
+
+
+
+interface Game
+{
+	public void play();
+}
+
+Cricket implements Game
+{
+	public void play()
+	{
+		System.err.println("Playing Cricket");
+	}
+}
+
+Chess implements Game
+{
+	void play()
+	{
+		System.out.println("Playing CHess");
+	}
+}
+
+Football implements Game
+{
+	void play()
+	{
+		System.out.println("Playing Football");
+	}
+}
+
+class Generic<T extends Game>
+{
+	T obj;
+	void call(T obj)
+	{
+		obj.play();
+	}
+	
+	
+}
+public class hello
+{
+	public static void main(String[] args) {
+		Generic<Game>g=new Generic<Game>();
+		g.call(new Football());
+		g.call(new Chess());
+		g.call(new Chess());
+		
+		
+	}
+}
+

@@ -1,0 +1,28 @@
+package core1;
+
+import java.io.IOException;
+
+public class jdb1 
+{
+	void disp3()throws IOException
+	{
+		int num=20;
+		if(num>10)
+		{
+			throw new IOException();
+		}
+	}
+	void disp2()throws IOException
+	{
+		disp3();
+	}
+	void disp1()throws IOException
+	{
+		disp2();
+	}
+	public static void main(String args[])
+	{
+		jdb1 j=new jdb1();
+		j.disp1(); // compilation error : add throws or try_catch
+	}
+}						

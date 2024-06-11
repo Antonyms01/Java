@@ -1,0 +1,22 @@
+package pack;
+
+
+
+interface sport
+{
+	String Sport(String name);
+	default void disp()
+	{
+		System.out.println("in disp");
+	}
+	
+	static void disp1()
+	{
+		System.out.println("In static disp1");
+	}
+}
+
+
+
+
+

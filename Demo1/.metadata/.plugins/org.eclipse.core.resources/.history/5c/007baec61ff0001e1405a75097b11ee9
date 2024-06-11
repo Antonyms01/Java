@@ -1,0 +1,56 @@
+package pack;
+
+import java.io.Serializable;
+
+class Mobile implements Serializable
+{
+	int price;
+	String name;
+	int model_no;
+	
+	
+	public int getPrice() {
+		return price;
+	}
+	
+	
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	public int getModel_no() {
+		return model_no;
+	}
+	
+	
+	public void setModel_no(int model_no) {
+		this.model_no = model_no;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Mobile [price=" + price + ", name=" + name + ", model_no=" + model_no + "]";
+	}
+	
+	
+}
+public class Practical1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

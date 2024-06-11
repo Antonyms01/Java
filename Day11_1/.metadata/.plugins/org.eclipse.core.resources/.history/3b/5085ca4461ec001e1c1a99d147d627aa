@@ -1,0 +1,28 @@
+//4) add 5 numbers inside CopyOnWriteArrayList and show how can you add one more number at the same time of traversal through its iterator.
+
+import java.util.concurrent.CopyOnWriteArrayList;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+import java.util.*;
+import java.io.*;
+
+public class Q4 {
+
+	public static void main(String[] args) {
+		CopyOnWriteArrayList<Integer> l2=new CopyOnWriteArrayList(); 
+		l.add(10);
+		l.add(20);
+		l.add(30);
+		l.add(40);
+		l.add(50);
+		
+		ListIterator <Integer> itr1= l2.listiterator();
+		while(itr1.hasNext())
+		{
+			System.out.println(itr1.next());
+		}
+		
+	
+	}
+
+}

@@ -1,0 +1,22 @@
+//7) create a HashMap.
+//store  prn no. and students name of 10 students inside the HashMap.
+//display it using iterator.
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Q7 {
+
+	public static void main(String[] args) {
+		Map<Integer,String>mymap=new HashMap<>();
+		int prn;
+		String name;
+		mymap.put(1,"Sohan");
+		mymap.put(2,"Sarode");
+		
+		
+		
+
+	}
+
+}

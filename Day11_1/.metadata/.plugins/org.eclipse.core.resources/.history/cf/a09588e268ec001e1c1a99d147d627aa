@@ -1,0 +1,74 @@
+//6) create a class "MyClass".//
+//create 5 different objects of it.
+//add them in a ArrayList.
+//store ArrayList in file.
+//Now open a file, read ArrayList and display all objects
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+class Myclass
+{
+	private int num;
+
+	public Myclass(int num) {
+		super();
+		this.num = num;
+	}
+	
+}
+public class Q6 {
+
+	public static void main(String[] args) {
+		Myclass m=new Myclass(10);
+		Myclass m1=new Myclass(20);
+		Myclass m2=new Myclass(30);
+		Myclass m3=new Myclass(40);
+		Myclass m4=new Myclass(50);
+		
+		List <Myclass>l=new ArrayList <Myclass>();
+		l.add(m);
+		l.add(m1);
+		l.add(m2);
+		l.add(m3);
+		l.add(m4);
+		
+		try(FileOutputStream fos=new FileOutputStream("xyz.txt"))
+		{
+			try(ObjectOutputStream oos=new ObjectOutputStream(fos))
+			{
+				oos.writeObject(fos);
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+		try(FileinputStream fis=new FileinputStream("xyz.txt"))
+		{
+			try(ObjectinputStream ois=new ObjectinputStream(fis))
+			{
+				ois.writeObject(fos);
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+	}
+
+}
