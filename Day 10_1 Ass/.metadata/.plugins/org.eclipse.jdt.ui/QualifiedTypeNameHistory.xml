@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
-    <fullyQualifiedTypeName name="java.util.ConcurrentModificationException"/>
-    <fullyQualifiedTypeName name="java.io.Externalizable"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-</qualifiedTypeNameHistroy>
